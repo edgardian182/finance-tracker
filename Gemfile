@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'  # Agrega el generador devise que permite metodo de autentificación
 gem 'twitter-bootstrap-rails' # Agrega el estilo bootstrap a las vistas
 gem 'devise-bootstrap-views'
+gem 'stock_quote' # Permite hacer seguimiento a acciones
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
