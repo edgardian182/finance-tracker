@@ -1,5 +1,5 @@
 class UserStocksController < ApplicationController
-  before_action :set_user_stock, only: [:show, :edit, :update, :destroy]
+  before_action :set_user_stock, only: [:show, :edit, :update]
 
   # GET /user_stocks
   # GET /user_stocks.json
@@ -70,9 +70,10 @@ class UserStocksController < ApplicationController
   # DELETE /user_stocks/1
   # DELETE /user_stocks/1.json
   def destroy
+    @user_stock = current_user.user_stocks.where(stock_id: params[:id]).first
     @user_stock.destroy
     respond_to do |format|
-      format.html { redirect_to user_stocks_url, notice: 'User stock was successfully destroyed.' }
+      format.html { redirect_to root_path, notice: 'Stock was successfully removed from portfolio.' }
       format.json { head :no_content }
     end
   end
