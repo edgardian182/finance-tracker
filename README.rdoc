@@ -1,1 +1,7 @@
 A Finance Tracker App 
+
+- En esta App podrás
+  - Crear un usuario que podrá ingresar con su email y contraseña a su perfil y acceso a la página
+  - Buscar y hacer seguimiento a diferentes acciones del mercado de valores
+  - Agregar amigos u otros usuarios y tener un seguimiento de las acciones que ellos siguen
+  - Al mismo tiempo podrás dejar de seguir a un usuario (Dejar de ser amigos) para dejar de ver sus acciones
