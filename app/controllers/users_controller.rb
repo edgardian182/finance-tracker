@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   
   def add_friend
     @friend = User.find(params[:friend])
-    current_user.firendships.build(friend_id: @friend.id)
+    current_user.friendships.build(friend_id: @friend.id)
     if current_user.save
       redirect_to my_friends_path, notice: "Friend was successfully added"
     else
